@@ -13,10 +13,15 @@
 #include <linux/slab.h>
 #include <linux/init.h>
 
-static const unsigned int write_expire = 2 * HZ; // in seconds
-static const unsigned int lba_factor = 4; // for 4MB logical block adressing size
-static const unsigned int max_bundle_check = 5; //number of write requests, that are checked for bundling
-static const unsigned int lba_check = 1; // true/false
+static unsigned int write_expire = 2 * HZ; // in seconds
+static unsigned int lba_factor = 4; // for n MB logical block adressing size
+static unsigned int max_bundle_check = 5; //number of write requests, that are checked for bundling
+static unsigned int lba_check = 1; // true/false
+
+module_param(write_expire, int, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP);
+module_param(lba_factor, int, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP);
+module_param(lba_check, int, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP);
+module_param(max_bundle_check, int, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP);
 
 struct grigora_data {
 	/* read and write fifo lists */
@@ -25,7 +30,6 @@ struct grigora_data {
 	/* expire time for write requests */
 	unsigned int write_expire;
 };
-
 
 static void
 grigora_merged_requests(struct request_queue *q, struct request *rq, struct request *next)
@@ -91,8 +95,8 @@ static int grigora_dispatch(struct request_queue *q, int force)
 
 				/* iterate safe through write queue */
 				for (pos = gd->fifo_list[WRITE].next->next, n = pos->next, i = 0;
-				pos != &gd->fifo_list[WRITE] && i < max_bundle_check;
-				pos = n, n = pos->next, i++)
+					pos != &gd->fifo_list[WRITE] && i < max_bundle_check;
+					pos = n, n = pos->next, i++)
 				{
 					next_rq = list_entry(pos, struct request, queuelist);
 
