@@ -13,7 +13,7 @@
 #include <linux/slab.h>
 #include <linux/init.h>
 
-static unsigned int write_expire = 2 * HZ; // in seconds
+static unsigned int write_expire = 4 * HZ; // in seconds
 static unsigned int lba_factor = 4; // for n MB logical block adressing size
 static unsigned int max_bundle_check = 5; //number of write requests, that are checked for bundling
 static unsigned int lba_check = 1; // true/false
