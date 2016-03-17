@@ -4,19 +4,19 @@ rm -rf out
 mkdir -p out
 for workload in varmail webserver fileserver;
 do 
-	for sched in noop grigora deadline cfq;
+	for sched in noop deadline cfq grigora;
 	do
-	echo $sched > /sys/block/vda/queue/scheduler
+	echo $sched > /sys/block/sdc/queue/scheduler
 	for i in `seq 1 3`;
 	do
 		echo "starting filebench run $i $sched $workload"
 		filebench << SCRIPT >> out/$sched-$workload
-		set \$dir=/tmp
 		load $workload
-		run 600
+		set \$dir=/ssd/filebench
+		run 60
 SCRIPT
 	done
-	grep "IO Summary" $sched-$workload > $sched-$workload-results
+	grep "IO Summary" out/$sched-$workload > out/$sched-$workload-results
 	done
 done
 
