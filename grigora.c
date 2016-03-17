@@ -4,7 +4,6 @@
 * ideas:
 * - reads before writes
 * - writes to same lba block should be bundled
-*
 */
 #include <linux/blkdev.h>
 #include <linux/elevator.h>
@@ -14,7 +13,7 @@
 #include <linux/init.h>
 
 static unsigned int write_expire = 4 * HZ; // in seconds
-static unsigned int lba_factor = 4; // for n MB logical block adressing size
+static unsigned int lba_factor = 1; // for n MB logical block adressing size
 static unsigned int max_bundle_check = 5; //number of write requests, that are checked for bundling
 static unsigned int lba_check = 1; // true/false
 
@@ -45,21 +44,18 @@ check_lb(struct request *current_rq,struct request *next_rq)
 
 	/* Kernel Sector size: 512 kb */
 	/* Logigal Block size: 1Mb * lba_factor */
-	/* So for LB-size of 4Mb a lba block has 8196 block sectors */
+	/* So for LB-size of 1Mb a lba block consists of 2048 block sectors */
 
 	/* get current rq block position number */
 	lba_block = blk_rq_pos(current_rq)/lba_factor >> 10;
-	//printk(KERN_ALERT "lba_block: %u", lba_block);
 
 	/* current lba block start position */
 	start_block = lba_block * lba_factor << 10;
-	//printk(KERN_ALERT "start block: %u", start_block);
+
 	/* current lba block end position */
 	end_block = start_block + 2048 * lba_factor;
-	//printk(KERN_ALERT "end block: %u", end_block);
 
 	next_block = blk_rq_pos(next_rq);
-	//printk(KERN_ALERT "next: %u", next_block);
 
 	if(start_block <= blk_rq_pos(next_rq) && blk_rq_pos(next_rq) < end_block)
 		return 1;
