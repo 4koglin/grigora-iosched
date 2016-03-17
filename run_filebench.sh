@@ -21,6 +21,6 @@ do
 SCRIPT
 		done
 	echo "$OUT_DIR/$sched-$workload" >> $OUT_DIR/gathered_results
-	grep "IO Summary" out/$sched-$workload | sed 's/mb#s,//'  | awk ' { ops += $7; rws += $11; anzahl ++; } END { print "runs: " anzahl ", OPS/S: " ops/anzahl ", rw/s: " rws/anzahl ; }' >> $OUT_DIR/gathered_results
+	grep "IO Summary" $OUT_DIR/$sched-$workload | sed 's/mb#s,//'  | awk ' { ops += $7; rws += $11; anzahl ++; } END { print "runs: " anzahl ", OPS/S: " ops/anzahl ", rw/s: " rws/anzahl ; }' >> $OUT_DIR/gathered_results
 	done
 done
