@@ -1,0 +1,25 @@
+Ergebnisse: 
+filebench_out/noop-varmail
+runs: 10, OPS/S: 16847, rw/s: 60.77
+filebench_out/deadline-varmail
+runs: 10, OPS/S: 16873.4, rw/s: 60.71
+filebench_out/cfq-varmail
+runs: 10, OPS/S: 16787, rw/s: 60.4
+filebench_out/grigora-varmail
+runs: 10, OPS/S: 16952.8, rw/s: 61.02
+filebench_out/noop-webserver
+runs: 10, OPS/S: 20330.4, rw/s: 101.88
+filebench_out/deadline-webserver
+runs: 10, OPS/S: 19285.7, rw/s: 96.67
+filebench_out/cfq-webserver
+runs: 10, OPS/S: 18852.2, rw/s: 94.46
+filebench_out/grigora-webserver
+runs: 10, OPS/S: 20729.6, rw/s: 103.92
+filebench_out/noop-fileserver
+runs: 10, OPS/S: 16528.2, rw/s: 394.92
+filebench_out/deadline-fileserver
+runs: 10, OPS/S: 16319.5, rw/s: 389.79
+filebench_out/cfq-fileserver
+runs: 10, OPS/S: 16293.5, rw/s: 389.33
+filebench_out/grigora-fileserver
+runs: 10, OPS/S: 16537.8, rw/s: 395.49

@@ -1,0 +1,380 @@
+Filebench Version 1.4.9.1
+25796: 0.000: Allocated 170MB of shared memory
+filebench> 25796: 0.001: Varmail Version 3.0 personality successfully loaded
+25796: 0.001: Usage: set $dir=<dir>
+25796: 0.001:        set $meanfilesize=<size>    defaults to 16384
+25796: 0.001:        set $nfiles=<value>     defaults to 1000
+25796: 0.001:        set $nthreads=<value>   defaults to 16
+25796: 0.001:        set $meanappendsize=<value> defaults to 16384
+25796: 0.001:        set $iosize=<size>  defaults to 1048576
+25796: 0.001:        set $meandirwidth=<size> defaults to 1000000
+25796: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 25796: 0.001: Creating/pre-allocating files and filesets
+25796: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+25796: 0.038: Removed any existing fileset bigfileset in 1 seconds
+25796: 0.038: making tree for filset /ssd/filebench/bigfileset
+25796: 0.038: Creating fileset bigfileset...
+25796: 0.101: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+25796: 0.101: waiting for fileset pre-allocation to finish
+25799: 0.101: Starting 1 filereader instances
+25800: 0.103: Starting 16 filereaderthread threads
+25796: 1.122: Running...
+25796: 61.127: Run took 60 seconds...
+25796: 61.127: Per-Operation Breakdown
+closefile4           78310ops     1305ops/s   0.0mb/s      0.0ms/op      870us/op-cpu [0ms - 0ms]
+readfile4            78311ops     1305ops/s  20.1mb/s      0.0ms/op      942us/op-cpu [0ms - 12ms]
+openfile4            78311ops     1305ops/s   0.0mb/s      0.0ms/op      831us/op-cpu [0ms - 1ms]
+closefile3           78311ops     1305ops/s   0.0mb/s      0.0ms/op      854us/op-cpu [0ms - 0ms]
+fsyncfile3           78311ops     1305ops/s   0.0mb/s      1.7ms/op     5017us/op-cpu [0ms - 85ms]
+appendfilerand3      78313ops     1305ops/s  10.1mb/s      0.1ms/op     1107us/op-cpu [0ms - 17ms]
+readfile3            78318ops     1305ops/s  20.0mb/s      0.0ms/op      972us/op-cpu [0ms - 12ms]
+openfile3            78318ops     1305ops/s   0.0mb/s      0.0ms/op      862us/op-cpu [0ms - 2ms]
+closefile2           78320ops     1305ops/s   0.0mb/s      0.0ms/op      868us/op-cpu [0ms - 0ms]
+fsyncfile2           78322ops     1305ops/s   0.0mb/s      1.7ms/op     5068us/op-cpu [0ms - 77ms]
+appendfilerand2      78325ops     1305ops/s  10.2mb/s      0.2ms/op     1343us/op-cpu [0ms - 17ms]
+createfile2          78325ops     1305ops/s   0.0mb/s      0.3ms/op     1615us/op-cpu [0ms - 17ms]
+deletefile1          78325ops     1305ops/s   0.0mb/s      0.2ms/op     1504us/op-cpu [0ms - 17ms]
+25796: 61.127: IO Summary: 1018120 ops, 16967.575 ops/s, (2610/2610 r/w),  60.5mb/s,    519us cpu/op,   1.1ms latency
+25796: 61.127: Shutting down processes
+Filebench Version 1.4.9.1
+25828: 0.000: Allocated 170MB of shared memory
+filebench> 25828: 0.001: Varmail Version 3.0 personality successfully loaded
+25828: 0.001: Usage: set $dir=<dir>
+25828: 0.001:        set $meanfilesize=<size>    defaults to 16384
+25828: 0.001:        set $nfiles=<value>     defaults to 1000
+25828: 0.001:        set $nthreads=<value>   defaults to 16
+25828: 0.001:        set $meanappendsize=<value> defaults to 16384
+25828: 0.001:        set $iosize=<size>  defaults to 1048576
+25828: 0.001:        set $meandirwidth=<size> defaults to 1000000
+25828: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 25828: 0.001: Creating/pre-allocating files and filesets
+25828: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+25828: 0.037: Removed any existing fileset bigfileset in 1 seconds
+25828: 0.037: making tree for filset /ssd/filebench/bigfileset
+25828: 0.037: Creating fileset bigfileset...
+25828: 0.105: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+25828: 0.105: waiting for fileset pre-allocation to finish
+25831: 0.105: Starting 1 filereader instances
+25832: 0.106: Starting 16 filereaderthread threads
+25828: 1.122: Running...
+25828: 61.126: Run took 60 seconds...
+25828: 61.127: Per-Operation Breakdown
+closefile4           76460ops     1274ops/s   0.0mb/s      0.0ms/op      864us/op-cpu [0ms - 0ms]
+readfile4            76460ops     1274ops/s  19.8mb/s      0.0ms/op      919us/op-cpu [0ms - 17ms]
+openfile4            76460ops     1274ops/s   0.0mb/s      0.0ms/op      856us/op-cpu [0ms - 1ms]
+closefile3           76460ops     1274ops/s   0.0mb/s      0.0ms/op      843us/op-cpu [0ms - 1ms]
+fsyncfile3           76460ops     1274ops/s   0.0mb/s      1.8ms/op     5093us/op-cpu [0ms - 76ms]
+appendfilerand3      76461ops     1274ops/s   9.9mb/s      0.1ms/op     1143us/op-cpu [0ms - 17ms]
+readfile3            76461ops     1274ops/s  19.8mb/s      0.0ms/op      967us/op-cpu [0ms - 16ms]
+openfile3            76461ops     1274ops/s   0.0mb/s      0.0ms/op      860us/op-cpu [0ms - 1ms]
+closefile2           76461ops     1274ops/s   0.0mb/s      0.0ms/op      866us/op-cpu [0ms - 0ms]
+fsyncfile2           76468ops     1274ops/s   0.0mb/s      1.9ms/op     5102us/op-cpu [0ms - 67ms]
+appendfilerand2      76475ops     1274ops/s   9.9mb/s      0.2ms/op     1369us/op-cpu [0ms - 18ms]
+createfile2          76475ops     1274ops/s   0.0mb/s      0.3ms/op     1640us/op-cpu [0ms - 18ms]
+deletefile1          76476ops     1275ops/s   0.0mb/s      0.3ms/op     1519us/op-cpu [0ms - 18ms]
+25828: 61.127: IO Summary: 994038 ops, 16566.199 ops/s, (2549/2549 r/w),  59.5mb/s,    521us cpu/op,   1.2ms latency
+25828: 61.127: Shutting down processes
+Filebench Version 1.4.9.1
+25861: 0.000: Allocated 170MB of shared memory
+filebench> 25861: 0.001: Varmail Version 3.0 personality successfully loaded
+25861: 0.001: Usage: set $dir=<dir>
+25861: 0.001:        set $meanfilesize=<size>    defaults to 16384
+25861: 0.001:        set $nfiles=<value>     defaults to 1000
+25861: 0.001:        set $nthreads=<value>   defaults to 16
+25861: 0.001:        set $meanappendsize=<value> defaults to 16384
+25861: 0.001:        set $iosize=<size>  defaults to 1048576
+25861: 0.001:        set $meandirwidth=<size> defaults to 1000000
+25861: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 25861: 0.001: Creating/pre-allocating files and filesets
+25861: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+25861: 0.037: Removed any existing fileset bigfileset in 1 seconds
+25861: 0.038: making tree for filset /ssd/filebench/bigfileset
+25861: 0.038: Creating fileset bigfileset...
+25861: 0.101: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+25861: 0.101: waiting for fileset pre-allocation to finish
+25864: 0.101: Starting 1 filereader instances
+25865: 0.102: Starting 16 filereaderthread threads
+25861: 1.126: Running...
+25861: 61.130: Run took 60 seconds...
+25861: 61.131: Per-Operation Breakdown
+closefile4           77600ops     1293ops/s   0.0mb/s      0.0ms/op      875us/op-cpu [0ms - 0ms]
+readfile4            77600ops     1293ops/s  20.0mb/s      0.0ms/op      936us/op-cpu [0ms - 13ms]
+openfile4            77600ops     1293ops/s   0.0mb/s      0.0ms/op      874us/op-cpu [0ms - 2ms]
+closefile3           77600ops     1293ops/s   0.0mb/s      0.0ms/op      842us/op-cpu [0ms - 0ms]
+fsyncfile3           77600ops     1293ops/s   0.0mb/s      1.7ms/op     5093us/op-cpu [0ms - 72ms]
+appendfilerand3      77605ops     1293ops/s  10.1mb/s      0.1ms/op     1135us/op-cpu [0ms - 12ms]
+readfile3            77605ops     1293ops/s  20.3mb/s      0.0ms/op      959us/op-cpu [0ms - 11ms]
+openfile3            77605ops     1293ops/s   0.0mb/s      0.0ms/op      889us/op-cpu [0ms - 2ms]
+closefile2           77605ops     1293ops/s   0.0mb/s      0.0ms/op      869us/op-cpu [0ms - 0ms]
+fsyncfile2           77605ops     1293ops/s   0.0mb/s      1.8ms/op     5158us/op-cpu [0ms - 65ms]
+appendfilerand2      77616ops     1294ops/s  10.0mb/s      0.2ms/op     1319us/op-cpu [0ms - 15ms]
+createfile2          77616ops     1294ops/s   0.0mb/s      0.3ms/op     1599us/op-cpu [0ms - 16ms]
+deletefile1          77616ops     1294ops/s   0.0mb/s      0.2ms/op     1531us/op-cpu [0ms - 16ms]
+25861: 61.131: IO Summary: 1008873 ops, 16813.492 ops/s, (2587/2587 r/w),  60.5mb/s,    521us cpu/op,   1.1ms latency
+25861: 61.131: Shutting down processes
+Filebench Version 1.4.9.1
+25894: 0.000: Allocated 170MB of shared memory
+filebench> 25894: 0.001: Varmail Version 3.0 personality successfully loaded
+25894: 0.001: Usage: set $dir=<dir>
+25894: 0.001:        set $meanfilesize=<size>    defaults to 16384
+25894: 0.001:        set $nfiles=<value>     defaults to 1000
+25894: 0.001:        set $nthreads=<value>   defaults to 16
+25894: 0.001:        set $meanappendsize=<value> defaults to 16384
+25894: 0.001:        set $iosize=<size>  defaults to 1048576
+25894: 0.001:        set $meandirwidth=<size> defaults to 1000000
+25894: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 25894: 0.001: Creating/pre-allocating files and filesets
+25894: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+25894: 0.037: Removed any existing fileset bigfileset in 1 seconds
+25894: 0.037: making tree for filset /ssd/filebench/bigfileset
+25894: 0.037: Creating fileset bigfileset...
+25894: 0.103: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+25894: 0.103: waiting for fileset pre-allocation to finish
+25897: 0.103: Starting 1 filereader instances
+25898: 0.104: Starting 16 filereaderthread threads
+25894: 1.128: Running...
+25894: 61.132: Run took 60 seconds...
+25894: 61.133: Per-Operation Breakdown
+closefile4           78251ops     1304ops/s   0.0mb/s      0.0ms/op      851us/op-cpu [0ms - 0ms]
+readfile4            78251ops     1304ops/s  20.5mb/s      0.0ms/op      949us/op-cpu [0ms - 11ms]
+openfile4            78252ops     1304ops/s   0.0mb/s      0.0ms/op      862us/op-cpu [0ms - 2ms]
+closefile3           78252ops     1304ops/s   0.0mb/s      0.0ms/op      872us/op-cpu [0ms - 0ms]
+fsyncfile3           78253ops     1304ops/s   0.0mb/s      1.7ms/op     5072us/op-cpu [0ms - 82ms]
+appendfilerand3      78259ops     1304ops/s  10.2mb/s      0.1ms/op     1156us/op-cpu [0ms - 12ms]
+readfile3            78259ops     1304ops/s  20.3mb/s      0.0ms/op      984us/op-cpu [0ms - 11ms]
+openfile3            78259ops     1304ops/s   0.0mb/s      0.0ms/op      880us/op-cpu [0ms - 1ms]
+closefile2           78259ops     1304ops/s   0.0mb/s      0.0ms/op      882us/op-cpu [0ms - 0ms]
+fsyncfile2           78261ops     1304ops/s   0.0mb/s      1.7ms/op     5080us/op-cpu [0ms - 75ms]
+appendfilerand2      78265ops     1304ops/s  10.2mb/s      0.2ms/op     1390us/op-cpu [0ms - 12ms]
+createfile2          78265ops     1304ops/s   0.0mb/s      0.3ms/op     1651us/op-cpu [0ms - 13ms]
+deletefile1          78266ops     1304ops/s   0.0mb/s      0.2ms/op     1500us/op-cpu [0ms - 21ms]
+25894: 61.133: IO Summary: 1017352 ops, 16954.764 ops/s, (2608/2609 r/w),  61.2mb/s,    522us cpu/op,   1.1ms latency
+25894: 61.133: Shutting down processes
+Filebench Version 1.4.9.1
+25927: 0.000: Allocated 170MB of shared memory
+filebench> 25927: 0.001: Varmail Version 3.0 personality successfully loaded
+25927: 0.001: Usage: set $dir=<dir>
+25927: 0.001:        set $meanfilesize=<size>    defaults to 16384
+25927: 0.001:        set $nfiles=<value>     defaults to 1000
+25927: 0.001:        set $nthreads=<value>   defaults to 16
+25927: 0.001:        set $meanappendsize=<value> defaults to 16384
+25927: 0.001:        set $iosize=<size>  defaults to 1048576
+25927: 0.001:        set $meandirwidth=<size> defaults to 1000000
+25927: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 25927: 0.001: Creating/pre-allocating files and filesets
+25927: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+25927: 0.037: Removed any existing fileset bigfileset in 1 seconds
+25927: 0.037: making tree for filset /ssd/filebench/bigfileset
+25927: 0.037: Creating fileset bigfileset...
+25927: 0.102: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+25927: 0.102: waiting for fileset pre-allocation to finish
+25930: 0.102: Starting 1 filereader instances
+25931: 0.103: Starting 16 filereaderthread threads
+25927: 1.125: Running...
+25927: 61.129: Run took 60 seconds...
+25927: 61.130: Per-Operation Breakdown
+closefile4           77792ops     1296ops/s   0.0mb/s      0.0ms/op      868us/op-cpu [0ms - 0ms]
+readfile4            77792ops     1296ops/s  20.1mb/s      0.0ms/op      945us/op-cpu [0ms - 16ms]
+openfile4            77792ops     1296ops/s   0.0mb/s      0.0ms/op      868us/op-cpu [0ms - 1ms]
+closefile3           77792ops     1296ops/s   0.0mb/s      0.0ms/op      822us/op-cpu [0ms - 0ms]
+fsyncfile3           77792ops     1296ops/s   0.0mb/s      1.7ms/op     5113us/op-cpu [0ms - 81ms]
+appendfilerand3      77794ops     1296ops/s  10.1mb/s      0.1ms/op     1140us/op-cpu [0ms - 15ms]
+readfile3            77800ops     1297ops/s  20.4mb/s      0.0ms/op      950us/op-cpu [0ms - 14ms]
+openfile3            77801ops     1297ops/s   0.0mb/s      0.0ms/op      907us/op-cpu [0ms - 2ms]
+closefile2           77801ops     1297ops/s   0.0mb/s      0.0ms/op      850us/op-cpu [0ms - 0ms]
+fsyncfile2           77802ops     1297ops/s   0.0mb/s      1.8ms/op     5142us/op-cpu [0ms - 75ms]
+appendfilerand2      77806ops     1297ops/s  10.1mb/s      0.2ms/op     1328us/op-cpu [0ms - 18ms]
+createfile2          77806ops     1297ops/s   0.0mb/s      0.3ms/op     1616us/op-cpu [0ms - 18ms]
+deletefile1          77807ops     1297ops/s   0.0mb/s      0.2ms/op     1519us/op-cpu [0ms - 18ms]
+25927: 61.130: IO Summary: 1011377 ops, 16855.198 ops/s, (2593/2593 r/w),  60.7mb/s,    523us cpu/op,   1.1ms latency
+25927: 61.130: Shutting down processes
+Filebench Version 1.4.9.1
+25960: 0.000: Allocated 170MB of shared memory
+filebench> 25960: 0.001: Varmail Version 3.0 personality successfully loaded
+25960: 0.001: Usage: set $dir=<dir>
+25960: 0.001:        set $meanfilesize=<size>    defaults to 16384
+25960: 0.001:        set $nfiles=<value>     defaults to 1000
+25960: 0.001:        set $nthreads=<value>   defaults to 16
+25960: 0.001:        set $meanappendsize=<value> defaults to 16384
+25960: 0.001:        set $iosize=<size>  defaults to 1048576
+25960: 0.001:        set $meandirwidth=<size> defaults to 1000000
+25960: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 25960: 0.001: Creating/pre-allocating files and filesets
+25960: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+25960: 0.036: Removed any existing fileset bigfileset in 1 seconds
+25960: 0.036: making tree for filset /ssd/filebench/bigfileset
+25960: 0.036: Creating fileset bigfileset...
+25960: 0.104: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+25960: 0.104: waiting for fileset pre-allocation to finish
+25963: 0.104: Starting 1 filereader instances
+25964: 0.106: Starting 16 filereaderthread threads
+25960: 1.129: Running...
+25960: 61.133: Run took 60 seconds...
+25960: 61.134: Per-Operation Breakdown
+closefile4           78370ops     1306ops/s   0.0mb/s      0.0ms/op      848us/op-cpu [0ms - 0ms]
+readfile4            78371ops     1306ops/s  20.4mb/s      0.0ms/op      946us/op-cpu [0ms - 10ms]
+openfile4            78371ops     1306ops/s   0.0mb/s      0.0ms/op      881us/op-cpu [0ms - 2ms]
+closefile3           78371ops     1306ops/s   0.0mb/s      0.0ms/op      838us/op-cpu [0ms - 0ms]
+fsyncfile3           78371ops     1306ops/s   0.0mb/s      1.7ms/op     5080us/op-cpu [0ms - 82ms]
+appendfilerand3      78371ops     1306ops/s  10.1mb/s      0.1ms/op     1118us/op-cpu [0ms - 12ms]
+readfile3            78371ops     1306ops/s  20.4mb/s      0.0ms/op      952us/op-cpu [0ms - 12ms]
+openfile3            78372ops     1306ops/s   0.0mb/s      0.0ms/op      917us/op-cpu [0ms - 1ms]
+closefile2           78372ops     1306ops/s   0.0mb/s      0.0ms/op      868us/op-cpu [0ms - 0ms]
+fsyncfile2           78372ops     1306ops/s   0.0mb/s      1.7ms/op     5133us/op-cpu [0ms - 75ms]
+appendfilerand2      78376ops     1306ops/s  10.2mb/s      0.2ms/op     1345us/op-cpu [0ms - 12ms]
+createfile2          78379ops     1306ops/s   0.0mb/s      0.3ms/op     1629us/op-cpu [0ms - 12ms]
+deletefile1          78381ops     1306ops/s   0.0mb/s      0.2ms/op     1518us/op-cpu [0ms - 12ms]
+25960: 61.134: IO Summary: 1018848 ops, 16979.687 ops/s, (2612/2612 r/w),  61.2mb/s,    521us cpu/op,   1.1ms latency
+25960: 61.134: Shutting down processes
+Filebench Version 1.4.9.1
+26001: 0.000: Allocated 170MB of shared memory
+filebench> 26001: 0.001: Varmail Version 3.0 personality successfully loaded
+26001: 0.001: Usage: set $dir=<dir>
+26001: 0.001:        set $meanfilesize=<size>    defaults to 16384
+26001: 0.001:        set $nfiles=<value>     defaults to 1000
+26001: 0.001:        set $nthreads=<value>   defaults to 16
+26001: 0.001:        set $meanappendsize=<value> defaults to 16384
+26001: 0.001:        set $iosize=<size>  defaults to 1048576
+26001: 0.001:        set $meandirwidth=<size> defaults to 1000000
+26001: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 26001: 0.001: Creating/pre-allocating files and filesets
+26001: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+26001: 0.037: Removed any existing fileset bigfileset in 1 seconds
+26001: 0.037: making tree for filset /ssd/filebench/bigfileset
+26001: 0.037: Creating fileset bigfileset...
+26001: 0.104: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+26001: 0.104: waiting for fileset pre-allocation to finish
+26004: 0.104: Starting 1 filereader instances
+26005: 0.105: Starting 16 filereaderthread threads
+26001: 1.126: Running...
+26001: 61.130: Run took 60 seconds...
+26001: 61.131: Per-Operation Breakdown
+closefile4           77189ops     1286ops/s   0.0mb/s      0.0ms/op      852us/op-cpu [0ms - 0ms]
+readfile4            77190ops     1286ops/s  20.1mb/s      0.0ms/op      889us/op-cpu [0ms - 21ms]
+openfile4            77191ops     1286ops/s   0.0mb/s      0.0ms/op      887us/op-cpu [0ms - 2ms]
+closefile3           77192ops     1286ops/s   0.0mb/s      0.0ms/op      822us/op-cpu [0ms - 0ms]
+fsyncfile3           77194ops     1286ops/s   0.0mb/s      1.8ms/op     5147us/op-cpu [0ms - 83ms]
+appendfilerand3      77199ops     1287ops/s  10.1mb/s      0.1ms/op     1120us/op-cpu [0ms - 16ms]
+readfile3            77202ops     1287ops/s  19.8mb/s      0.0ms/op      950us/op-cpu [0ms - 17ms]
+openfile3            77203ops     1287ops/s   0.0mb/s      0.0ms/op      896us/op-cpu [0ms - 2ms]
+closefile2           77203ops     1287ops/s   0.0mb/s      0.0ms/op      862us/op-cpu [0ms - 0ms]
+fsyncfile2           77203ops     1287ops/s   0.0mb/s      1.8ms/op     5166us/op-cpu [0ms - 76ms]
+appendfilerand2      77204ops     1287ops/s  10.1mb/s      0.2ms/op     1333us/op-cpu [0ms - 17ms]
+createfile2          77204ops     1287ops/s   0.0mb/s      0.3ms/op     1607us/op-cpu [0ms - 17ms]
+deletefile1          77204ops     1287ops/s   0.0mb/s      0.3ms/op     1530us/op-cpu [0ms - 30ms]
+26001: 61.131: IO Summary: 1003578 ops, 16725.218 ops/s, (2573/2573 r/w),  60.1mb/s,    520us cpu/op,   1.1ms latency
+26001: 61.131: Shutting down processes
+Filebench Version 1.4.9.1
+26034: 0.000: Allocated 170MB of shared memory
+filebench> 26034: 0.001: Varmail Version 3.0 personality successfully loaded
+26034: 0.001: Usage: set $dir=<dir>
+26034: 0.001:        set $meanfilesize=<size>    defaults to 16384
+26034: 0.001:        set $nfiles=<value>     defaults to 1000
+26034: 0.001:        set $nthreads=<value>   defaults to 16
+26034: 0.001:        set $meanappendsize=<value> defaults to 16384
+26034: 0.001:        set $iosize=<size>  defaults to 1048576
+26034: 0.001:        set $meandirwidth=<size> defaults to 1000000
+26034: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 26034: 0.001: Creating/pre-allocating files and filesets
+26034: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+26034: 0.039: Removed any existing fileset bigfileset in 1 seconds
+26034: 0.039: making tree for filset /ssd/filebench/bigfileset
+26034: 0.040: Creating fileset bigfileset...
+26034: 0.105: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+26034: 0.105: waiting for fileset pre-allocation to finish
+26037: 0.105: Starting 1 filereader instances
+26038: 0.106: Starting 16 filereaderthread threads
+26034: 1.125: Running...
+26034: 61.129: Run took 60 seconds...
+26034: 61.130: Per-Operation Breakdown
+closefile4           77915ops     1299ops/s   0.0mb/s      0.0ms/op      865us/op-cpu [0ms - 0ms]
+readfile4            77915ops     1299ops/s  20.4mb/s      0.0ms/op      926us/op-cpu [0ms - 13ms]
+openfile4            77915ops     1299ops/s   0.0mb/s      0.0ms/op      846us/op-cpu [0ms - 2ms]
+closefile3           77915ops     1299ops/s   0.0mb/s      0.0ms/op      828us/op-cpu [0ms - 0ms]
+fsyncfile3           77915ops     1299ops/s   0.0mb/s      1.7ms/op     5180us/op-cpu [0ms - 87ms]
+appendfilerand3      77915ops     1299ops/s  10.1mb/s      0.1ms/op     1120us/op-cpu [0ms - 11ms]
+readfile3            77922ops     1299ops/s  20.2mb/s      0.0ms/op      974us/op-cpu [0ms - 15ms]
+openfile3            77927ops     1299ops/s   0.0mb/s      0.0ms/op      864us/op-cpu [0ms - 2ms]
+closefile2           77931ops     1299ops/s   0.0mb/s      0.0ms/op      855us/op-cpu [0ms - 0ms]
+fsyncfile2           77931ops     1299ops/s   0.0mb/s      1.8ms/op     5164us/op-cpu [0ms - 54ms]
+appendfilerand2      77931ops     1299ops/s  10.1mb/s      0.2ms/op     1367us/op-cpu [0ms - 12ms]
+createfile2          77931ops     1299ops/s   0.0mb/s      0.3ms/op     1636us/op-cpu [0ms - 16ms]
+deletefile1          77931ops     1299ops/s   0.0mb/s      0.2ms/op     1532us/op-cpu [0ms - 16ms]
+26034: 61.130: IO Summary: 1012994 ops, 16882.166 ops/s, (2597/2597 r/w),  61.0mb/s,    522us cpu/op,   1.1ms latency
+26034: 61.130: Shutting down processes
+Filebench Version 1.4.9.1
+26067: 0.000: Allocated 170MB of shared memory
+filebench> 26067: 0.001: Varmail Version 3.0 personality successfully loaded
+26067: 0.001: Usage: set $dir=<dir>
+26067: 0.001:        set $meanfilesize=<size>    defaults to 16384
+26067: 0.001:        set $nfiles=<value>     defaults to 1000
+26067: 0.001:        set $nthreads=<value>   defaults to 16
+26067: 0.001:        set $meanappendsize=<value> defaults to 16384
+26067: 0.001:        set $iosize=<size>  defaults to 1048576
+26067: 0.001:        set $meandirwidth=<size> defaults to 1000000
+26067: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 26067: 0.001: Creating/pre-allocating files and filesets
+26067: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+26067: 0.038: Removed any existing fileset bigfileset in 1 seconds
+26067: 0.038: making tree for filset /ssd/filebench/bigfileset
+26067: 0.038: Creating fileset bigfileset...
+26067: 0.103: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+26067: 0.103: waiting for fileset pre-allocation to finish
+26070: 0.103: Starting 1 filereader instances
+26071: 0.104: Starting 16 filereaderthread threads
+26067: 1.124: Running...
+26067: 61.129: Run took 60 seconds...
+26067: 61.129: Per-Operation Breakdown
+closefile4           78730ops     1312ops/s   0.0mb/s      0.0ms/op      849us/op-cpu [0ms - 0ms]
+readfile4            78730ops     1312ops/s  20.4mb/s      0.0ms/op      968us/op-cpu [0ms - 11ms]
+openfile4            78730ops     1312ops/s   0.0mb/s      0.0ms/op      900us/op-cpu [0ms - 3ms]
+closefile3           78730ops     1312ops/s   0.0mb/s      0.0ms/op      810us/op-cpu [0ms - 0ms]
+fsyncfile3           78732ops     1312ops/s   0.0mb/s      1.7ms/op     4970us/op-cpu [0ms - 70ms]
+appendfilerand3      78736ops     1312ops/s  10.2mb/s      0.1ms/op     1159us/op-cpu [0ms - 11ms]
+readfile3            78736ops     1312ops/s  20.3mb/s      0.0ms/op      972us/op-cpu [0ms - 15ms]
+openfile3            78736ops     1312ops/s   0.0mb/s      0.0ms/op      875us/op-cpu [0ms - 2ms]
+closefile2           78736ops     1312ops/s   0.0mb/s      0.0ms/op      858us/op-cpu [0ms - 1ms]
+fsyncfile2           78736ops     1312ops/s   0.0mb/s      1.7ms/op     5168us/op-cpu [0ms - 54ms]
+appendfilerand2      78746ops     1312ops/s  10.2mb/s      0.2ms/op     1334us/op-cpu [0ms - 13ms]
+createfile2          78746ops     1312ops/s   0.0mb/s      0.3ms/op     1581us/op-cpu [0ms - 13ms]
+deletefile1          78746ops     1312ops/s   0.0mb/s      0.2ms/op     1523us/op-cpu [0ms - 13ms]
+26067: 61.129: IO Summary: 1023570 ops, 17058.387 ops/s, (2624/2625 r/w),  61.3mb/s,    520us cpu/op,   1.1ms latency
+26067: 61.129: Shutting down processes
+Filebench Version 1.4.9.1
+26099: 0.000: Allocated 170MB of shared memory
+filebench> 26099: 0.001: Varmail Version 3.0 personality successfully loaded
+26099: 0.001: Usage: set $dir=<dir>
+26099: 0.001:        set $meanfilesize=<size>    defaults to 16384
+26099: 0.001:        set $nfiles=<value>     defaults to 1000
+26099: 0.001:        set $nthreads=<value>   defaults to 16
+26099: 0.001:        set $meanappendsize=<value> defaults to 16384
+26099: 0.001:        set $iosize=<size>  defaults to 1048576
+26099: 0.001:        set $meandirwidth=<size> defaults to 1000000
+26099: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 26099: 0.001: Creating/pre-allocating files and filesets
+26099: 0.003: Fileset bigfileset: 1000 files, 0 leafdirs, avg dir width = 1000000, avg dir depth = 0.5, 14.959MB
+26099: 0.038: Removed any existing fileset bigfileset in 1 seconds
+26099: 0.038: making tree for filset /ssd/filebench/bigfileset
+26099: 0.038: Creating fileset bigfileset...
+26099: 0.103: Preallocated 805 of 1000 of fileset bigfileset in 1 seconds
+26099: 0.103: waiting for fileset pre-allocation to finish
+26102: 0.103: Starting 1 filereader instances
+26103: 0.104: Starting 16 filereaderthread threads
+26099: 1.115: Running...
+26099: 61.119: Run took 60 seconds...
+26099: 61.120: Per-Operation Breakdown
+closefile4           78144ops     1302ops/s   0.0mb/s      0.0ms/op      882us/op-cpu [0ms - 0ms]
+readfile4            78145ops     1302ops/s  20.4mb/s      0.0ms/op      940us/op-cpu [0ms - 17ms]
+openfile4            78145ops     1302ops/s   0.0mb/s      0.0ms/op      871us/op-cpu [0ms - 2ms]
+closefile3           78145ops     1302ops/s   0.0mb/s      0.0ms/op      821us/op-cpu [0ms - 0ms]
+fsyncfile3           78145ops     1302ops/s   0.0mb/s      1.7ms/op     5173us/op-cpu [0ms - 68ms]
+appendfilerand3      78146ops     1302ops/s  10.2mb/s      0.1ms/op     1162us/op-cpu [0ms - 15ms]
+readfile3            78147ops     1302ops/s  20.3mb/s      0.0ms/op      962us/op-cpu [0ms - 14ms]
+openfile3            78147ops     1302ops/s   0.0mb/s      0.0ms/op      902us/op-cpu [0ms - 2ms]
+closefile2           78150ops     1302ops/s   0.0mb/s      0.0ms/op      883us/op-cpu [0ms - 0ms]
+fsyncfile2           78151ops     1302ops/s   0.0mb/s      1.7ms/op     5136us/op-cpu [0ms - 64ms]
+appendfilerand2      78154ops     1302ops/s  10.2mb/s      0.2ms/op     1336us/op-cpu [0ms - 15ms]
+createfile2          78154ops     1302ops/s   0.0mb/s      0.3ms/op     1604us/op-cpu [0ms - 14ms]
+deletefile1          78159ops     1303ops/s   0.0mb/s      0.2ms/op     1556us/op-cpu [0ms - 18ms]
+26099: 61.120: IO Summary: 1015932 ops, 16931.114 ops/s, (2605/2605 r/w),  61.1mb/s,    523us cpu/op,   1.1ms latency
+26099: 61.120: Shutting down processes

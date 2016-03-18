@@ -1,0 +1,360 @@
+Filebench Version 1.4.9.1
+31686: 0.000: Allocated 170MB of shared memory
+filebench> 31686: 0.001: File-server Version 3.0 personality successfully loaded
+31686: 0.001: Usage: set $dir=<dir>
+31686: 0.001:        set $meanfilesize=<size>     defaults to 131072
+31686: 0.001:        set $nfiles=<value>      defaults to 10000
+31686: 0.001:        set $nthreads=<value>    defaults to 50
+31686: 0.001:        set $meanappendsize=<value>  defaults to 16384
+31686: 0.001:        set $iosize=<size>  defaults to 1048576
+31686: 0.001:        set $meandirwidth=<size> defaults to 20
+31686: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 31686: 0.002: Creating/pre-allocating files and filesets
+31686: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+31686: 0.045: Removed any existing fileset bigfileset in 1 seconds
+31686: 0.045: making tree for filset /ssd/filebench/bigfileset
+31686: 0.063: Creating fileset bigfileset...
+31686: 1.129: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+31686: 1.129: waiting for fileset pre-allocation to finish
+31689: 1.129: Starting 1 filereader instances
+31690: 1.131: Starting 50 filereaderthread threads
+31686: 2.204: Running...
+31686: 62.210: Run took 60 seconds...
+31686: 62.214: Per-Operation Breakdown
+statfile1            93303ops     1555ops/s   0.0mb/s      0.0ms/op     4157us/op-cpu [0ms - 0ms]
+deletefile1          93306ops     1555ops/s   0.0mb/s      0.8ms/op     6342us/op-cpu [0ms - 328ms]
+closefile3           93310ops     1555ops/s   0.0mb/s      0.0ms/op     4129us/op-cpu [0ms - 0ms]
+readfile1            93315ops     1555ops/s 203.7mb/s      0.1ms/op     4314us/op-cpu [0ms - 151ms]
+openfile2            93318ops     1555ops/s   0.0mb/s      0.0ms/op     4221us/op-cpu [0ms - 6ms]
+closefile2           93323ops     1555ops/s   0.0mb/s      0.0ms/op     4110us/op-cpu [0ms - 1ms]
+appendfilerand1      93324ops     1555ops/s  12.2mb/s      0.1ms/op     4257us/op-cpu [0ms - 156ms]
+openfile1            93332ops     1555ops/s   0.0mb/s      0.1ms/op     4251us/op-cpu [0ms - 5ms]
+closefile1           93337ops     1555ops/s   0.0mb/s      0.0ms/op     4143us/op-cpu [0ms - 1ms]
+wrtfile1             93345ops     1556ops/s 192.1mb/s      0.2ms/op     4724us/op-cpu [0ms - 156ms]
+createfile1          93349ops     1556ops/s   0.0mb/s      0.2ms/op     4575us/op-cpu [0ms - 149ms]
+31686: 62.214: IO Summary: 1026562 ops, 17108.021 ops/s, (1555/3111 r/w), 408.0mb/s,    629us cpu/op,   0.5ms latency
+31686: 62.214: Shutting down processes
+Filebench Version 1.4.9.1
+31755: 0.000: Allocated 170MB of shared memory
+filebench> 31755: 0.001: File-server Version 3.0 personality successfully loaded
+31755: 0.001: Usage: set $dir=<dir>
+31755: 0.001:        set $meanfilesize=<size>     defaults to 131072
+31755: 0.001:        set $nfiles=<value>      defaults to 10000
+31755: 0.001:        set $nthreads=<value>    defaults to 50
+31755: 0.001:        set $meanappendsize=<value>  defaults to 16384
+31755: 0.001:        set $iosize=<size>  defaults to 1048576
+31755: 0.001:        set $meandirwidth=<size> defaults to 20
+31755: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 31755: 0.001: Creating/pre-allocating files and filesets
+31755: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+31755: 0.457: Removed any existing fileset bigfileset in 1 seconds
+31755: 0.457: making tree for filset /ssd/filebench/bigfileset
+31755: 0.482: Creating fileset bigfileset...
+31755: 1.504: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+31755: 1.504: waiting for fileset pre-allocation to finish
+31758: 1.504: Starting 1 filereader instances
+31759: 1.505: Starting 50 filereaderthread threads
+31755: 2.574: Running...
+31755: 62.578: Run took 60 seconds...
+31755: 62.583: Per-Operation Breakdown
+statfile1            90458ops     1508ops/s   0.0mb/s      0.0ms/op     4307us/op-cpu [0ms - 1ms]
+deletefile1          90461ops     1508ops/s   0.0mb/s      0.8ms/op     6447us/op-cpu [0ms - 279ms]
+closefile3           90462ops     1508ops/s   0.0mb/s      0.0ms/op     4284us/op-cpu [0ms - 1ms]
+readfile1            90466ops     1508ops/s 197.3mb/s      0.1ms/op     4521us/op-cpu [0ms - 182ms]
+openfile2            90470ops     1508ops/s   0.0mb/s      0.1ms/op     4393us/op-cpu [0ms - 14ms]
+closefile2           90479ops     1508ops/s   0.0mb/s      0.0ms/op     4271us/op-cpu [0ms - 0ms]
+appendfilerand1      90485ops     1508ops/s  11.8mb/s      0.1ms/op     4427us/op-cpu [0ms - 181ms]
+openfile1            90490ops     1508ops/s   0.0mb/s      0.1ms/op     4458us/op-cpu [0ms - 15ms]
+closefile1           90500ops     1508ops/s   0.0mb/s      0.0ms/op     4320us/op-cpu [0ms - 1ms]
+wrtfile1             90502ops     1508ops/s 186.9mb/s      0.2ms/op     4940us/op-cpu [0ms - 178ms]
+createfile1          90508ops     1508ops/s   0.0mb/s      0.2ms/op     4750us/op-cpu [0ms - 183ms]
+31755: 62.583: IO Summary: 995281 ops, 16586.973 ops/s, (1508/3016 r/w), 395.9mb/s,    660us cpu/op,   0.5ms latency
+31755: 62.583: Shutting down processes
+Filebench Version 1.4.9.1
+31823: 0.000: Allocated 170MB of shared memory
+filebench> 31823: 0.001: File-server Version 3.0 personality successfully loaded
+31823: 0.001: Usage: set $dir=<dir>
+31823: 0.001:        set $meanfilesize=<size>     defaults to 131072
+31823: 0.001:        set $nfiles=<value>      defaults to 10000
+31823: 0.001:        set $nthreads=<value>    defaults to 50
+31823: 0.001:        set $meanappendsize=<value>  defaults to 16384
+31823: 0.001:        set $iosize=<size>  defaults to 1048576
+31823: 0.001:        set $meandirwidth=<size> defaults to 20
+31823: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 31823: 0.001: Creating/pre-allocating files and filesets
+31823: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+31823: 0.446: Removed any existing fileset bigfileset in 1 seconds
+31823: 0.446: making tree for filset /ssd/filebench/bigfileset
+31823: 0.472: Creating fileset bigfileset...
+31823: 1.467: Preallocated 7979 of 10000 of fileset bigfileset in 1 seconds
+31823: 1.467: waiting for fileset pre-allocation to finish
+31827: 1.468: Starting 1 filereader instances
+31828: 1.469: Starting 50 filereaderthread threads
+31823: 2.541: Running...
+31823: 62.546: Run took 60 seconds...
+31823: 62.551: Per-Operation Breakdown
+statfile1            92860ops     1548ops/s   0.0mb/s      0.0ms/op     4181us/op-cpu [0ms - 3ms]
+deletefile1          92860ops     1548ops/s   0.0mb/s      0.7ms/op     5673us/op-cpu [0ms - 390ms]
+closefile3           92861ops     1548ops/s   0.0mb/s      0.0ms/op     4126us/op-cpu [0ms - 3ms]
+readfile1            92865ops     1548ops/s 203.0mb/s      0.2ms/op     4316us/op-cpu [0ms - 203ms]
+openfile2            92873ops     1548ops/s   0.0mb/s      0.1ms/op     4242us/op-cpu [0ms - 12ms]
+closefile2           92878ops     1548ops/s   0.0mb/s      0.0ms/op     4066us/op-cpu [0ms - 1ms]
+appendfilerand1      92884ops     1548ops/s  12.1mb/s      0.2ms/op     4240us/op-cpu [0ms - 203ms]
+openfile1            92890ops     1548ops/s   0.0mb/s      0.1ms/op     4282us/op-cpu [0ms - 13ms]
+closefile1           92895ops     1548ops/s   0.0mb/s      0.0ms/op     4151us/op-cpu [0ms - 1ms]
+wrtfile1             92897ops     1548ops/s 191.8mb/s      0.2ms/op     4750us/op-cpu [0ms - 193ms]
+createfile1          92904ops     1548ops/s   0.0mb/s      0.2ms/op     4622us/op-cpu [0ms - 201ms]
+31823: 62.551: IO Summary: 1021667 ops, 17026.502 ops/s, (1548/3096 r/w), 406.9mb/s,    632us cpu/op,   0.6ms latency
+31823: 62.551: Shutting down processes
+Filebench Version 1.4.9.1
+31896: 0.000: Allocated 170MB of shared memory
+filebench> 31896: 0.001: File-server Version 3.0 personality successfully loaded
+31896: 0.001: Usage: set $dir=<dir>
+31896: 0.001:        set $meanfilesize=<size>     defaults to 131072
+31896: 0.001:        set $nfiles=<value>      defaults to 10000
+31896: 0.001:        set $nthreads=<value>    defaults to 50
+31896: 0.001:        set $meanappendsize=<value>  defaults to 16384
+31896: 0.001:        set $iosize=<size>  defaults to 1048576
+31896: 0.001:        set $meandirwidth=<size> defaults to 20
+31896: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 31896: 0.001: Creating/pre-allocating files and filesets
+31896: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+31896: 0.490: Removed any existing fileset bigfileset in 1 seconds
+31896: 0.490: making tree for filset /ssd/filebench/bigfileset
+31896: 0.515: Creating fileset bigfileset...
+31896: 1.542: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+31896: 1.542: waiting for fileset pre-allocation to finish
+31899: 1.542: Starting 1 filereader instances
+31900: 1.543: Starting 50 filereaderthread threads
+31896: 2.619: Running...
+31896: 62.623: Run took 60 seconds...
+31896: 62.628: Per-Operation Breakdown
+statfile1            87597ops     1460ops/s   0.0mb/s      0.0ms/op     4463us/op-cpu [0ms - 1ms]
+deletefile1          87603ops     1460ops/s   0.0mb/s      0.7ms/op     5926us/op-cpu [0ms - 369ms]
+closefile3           87609ops     1460ops/s   0.0mb/s      0.0ms/op     4399us/op-cpu [0ms - 1ms]
+readfile1            87611ops     1460ops/s 190.9mb/s      0.2ms/op     4622us/op-cpu [0ms - 234ms]
+openfile2            87614ops     1460ops/s   0.0mb/s      0.0ms/op     4554us/op-cpu [0ms - 7ms]
+closefile2           87617ops     1460ops/s   0.0mb/s      0.0ms/op     4378us/op-cpu [0ms - 1ms]
+appendfilerand1      87623ops     1460ops/s  11.4mb/s      0.1ms/op     4518us/op-cpu [0ms - 234ms]
+openfile1            87629ops     1460ops/s   0.0mb/s      0.1ms/op     4569us/op-cpu [0ms - 7ms]
+closefile1           87632ops     1460ops/s   0.0mb/s      0.0ms/op     4431us/op-cpu [0ms - 5ms]
+wrtfile1             87636ops     1461ops/s 181.0mb/s      0.2ms/op     5101us/op-cpu [0ms - 234ms]
+createfile1          87640ops     1461ops/s   0.0mb/s      0.2ms/op     4830us/op-cpu [0ms - 240ms]
+31896: 62.628: IO Summary: 963811 ops, 16062.492 ops/s, (1460/2921 r/w), 383.4mb/s,    674us cpu/op,   0.5ms latency
+31896: 62.628: Shutting down processes
+Filebench Version 1.4.9.1
+31963: 0.000: Allocated 170MB of shared memory
+filebench> 31963: 0.001: File-server Version 3.0 personality successfully loaded
+31963: 0.001: Usage: set $dir=<dir>
+31963: 0.001:        set $meanfilesize=<size>     defaults to 131072
+31963: 0.001:        set $nfiles=<value>      defaults to 10000
+31963: 0.001:        set $nthreads=<value>    defaults to 50
+31963: 0.001:        set $meanappendsize=<value>  defaults to 16384
+31963: 0.001:        set $iosize=<size>  defaults to 1048576
+31963: 0.001:        set $meandirwidth=<size> defaults to 20
+31963: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 31963: 0.001: Creating/pre-allocating files and filesets
+31963: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+31963: 0.451: Removed any existing fileset bigfileset in 1 seconds
+31963: 0.451: making tree for filset /ssd/filebench/bigfileset
+31963: 0.472: Creating fileset bigfileset...
+31963: 1.557: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+31963: 1.557: waiting for fileset pre-allocation to finish
+31966: 1.557: Starting 1 filereader instances
+31967: 1.558: Starting 50 filereaderthread threads
+31963: 2.602: Running...
+31963: 62.607: Run took 60 seconds...
+31963: 62.611: Per-Operation Breakdown
+statfile1            89566ops     1493ops/s   0.0mb/s      0.0ms/op     4394us/op-cpu [0ms - 0ms]
+deletefile1          89572ops     1493ops/s   0.0mb/s      0.9ms/op     6549us/op-cpu [0ms - 335ms]
+closefile3           89578ops     1493ops/s   0.0mb/s      0.0ms/op     4349us/op-cpu [0ms - 1ms]
+readfile1            89580ops     1493ops/s 195.7mb/s      0.2ms/op     4544us/op-cpu [0ms - 224ms]
+openfile2            89587ops     1493ops/s   0.0mb/s      0.0ms/op     4452us/op-cpu [0ms - 15ms]
+closefile2           89590ops     1493ops/s   0.0mb/s      0.0ms/op     4343us/op-cpu [0ms - 1ms]
+appendfilerand1      89592ops     1493ops/s  11.7mb/s      0.2ms/op     4450us/op-cpu [0ms - 229ms]
+openfile1            89598ops     1493ops/s   0.0mb/s      0.1ms/op     4477us/op-cpu [0ms - 13ms]
+closefile1           89601ops     1493ops/s   0.0mb/s      0.0ms/op     4339us/op-cpu [0ms - 1ms]
+wrtfile1             89610ops     1493ops/s 185.7mb/s      0.2ms/op     4995us/op-cpu [0ms - 199ms]
+createfile1          89614ops     1493ops/s   0.0mb/s      0.2ms/op     4797us/op-cpu [0ms - 224ms]
+31963: 62.611: IO Summary: 985488 ops, 16423.743 ops/s, (1493/2987 r/w), 393.1mb/s,    666us cpu/op,   0.6ms latency
+31963: 62.611: Shutting down processes
+Filebench Version 1.4.9.1
+32029: 0.000: Allocated 170MB of shared memory
+filebench> 32029: 0.001: File-server Version 3.0 personality successfully loaded
+32029: 0.001: Usage: set $dir=<dir>
+32029: 0.001:        set $meanfilesize=<size>     defaults to 131072
+32029: 0.001:        set $nfiles=<value>      defaults to 10000
+32029: 0.001:        set $nthreads=<value>    defaults to 50
+32029: 0.001:        set $meanappendsize=<value>  defaults to 16384
+32029: 0.001:        set $iosize=<size>  defaults to 1048576
+32029: 0.001:        set $meandirwidth=<size> defaults to 20
+32029: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 32029: 0.001: Creating/pre-allocating files and filesets
+32029: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+32029: 0.454: Removed any existing fileset bigfileset in 1 seconds
+32029: 0.454: making tree for filset /ssd/filebench/bigfileset
+32029: 0.474: Creating fileset bigfileset...
+32029: 1.468: Preallocated 7979 of 10000 of fileset bigfileset in 1 seconds
+32029: 1.468: waiting for fileset pre-allocation to finish
+32032: 1.468: Starting 1 filereader instances
+32033: 1.470: Starting 50 filereaderthread threads
+32029: 2.550: Running...
+32029: 62.554: Run took 60 seconds...
+32029: 62.559: Per-Operation Breakdown
+statfile1            95196ops     1586ops/s   0.0mb/s      0.0ms/op     4095us/op-cpu [0ms - 0ms]
+deletefile1          95203ops     1587ops/s   0.0mb/s      0.8ms/op     6109us/op-cpu [0ms - 306ms]
+closefile3           95211ops     1587ops/s   0.0mb/s      0.0ms/op     4114us/op-cpu [0ms - 2ms]
+readfile1            95216ops     1587ops/s 208.1mb/s      0.1ms/op     4265us/op-cpu [0ms - 230ms]
+openfile2            95219ops     1587ops/s   0.0mb/s      0.0ms/op     4165us/op-cpu [0ms - 6ms]
+closefile2           95221ops     1587ops/s   0.0mb/s      0.0ms/op     4052us/op-cpu [0ms - 1ms]
+appendfilerand1      95226ops     1587ops/s  12.4mb/s      0.2ms/op     4181us/op-cpu [0ms - 234ms]
+openfile1            95231ops     1587ops/s   0.0mb/s      0.1ms/op     4213us/op-cpu [0ms - 5ms]
+closefile1           95234ops     1587ops/s   0.0mb/s      0.0ms/op     4121us/op-cpu [0ms - 1ms]
+wrtfile1             95236ops     1587ops/s 197.4mb/s      0.2ms/op     4696us/op-cpu [0ms - 231ms]
+createfile1          95242ops     1587ops/s   0.0mb/s      0.2ms/op     4492us/op-cpu [0ms - 234ms]
+32029: 62.559: IO Summary: 1047435 ops, 17456.135 ops/s, (1587/3174 r/w), 417.8mb/s,    626us cpu/op,   0.5ms latency
+32029: 62.559: Shutting down processes
+Filebench Version 1.4.9.1
+32097: 0.000: Allocated 170MB of shared memory
+filebench> 32097: 0.001: File-server Version 3.0 personality successfully loaded
+32097: 0.001: Usage: set $dir=<dir>
+32097: 0.001:        set $meanfilesize=<size>     defaults to 131072
+32097: 0.001:        set $nfiles=<value>      defaults to 10000
+32097: 0.001:        set $nthreads=<value>    defaults to 50
+32097: 0.001:        set $meanappendsize=<value>  defaults to 16384
+32097: 0.001:        set $iosize=<size>  defaults to 1048576
+32097: 0.001:        set $meandirwidth=<size> defaults to 20
+32097: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 32097: 0.001: Creating/pre-allocating files and filesets
+32097: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+32097: 0.442: Removed any existing fileset bigfileset in 1 seconds
+32097: 0.442: making tree for filset /ssd/filebench/bigfileset
+32097: 0.467: Creating fileset bigfileset...
+32097: 1.470: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+32097: 1.470: waiting for fileset pre-allocation to finish
+32100: 1.470: Starting 1 filereader instances
+32101: 1.471: Starting 50 filereaderthread threads
+32097: 2.540: Running...
+32097: 62.546: Run took 60 seconds...
+32097: 62.550: Per-Operation Breakdown
+statfile1            91505ops     1525ops/s   0.0mb/s      0.0ms/op     4269us/op-cpu [0ms - 2ms]
+deletefile1          91508ops     1525ops/s   0.0mb/s      0.6ms/op     5559us/op-cpu [0ms - 302ms]
+closefile3           91511ops     1525ops/s   0.0mb/s      0.0ms/op     4163us/op-cpu [0ms - 1ms]
+readfile1            91514ops     1525ops/s 199.7mb/s      0.2ms/op     4409us/op-cpu [0ms - 236ms]
+openfile2            91519ops     1525ops/s   0.0mb/s      0.1ms/op     4340us/op-cpu [0ms - 5ms]
+closefile2           91524ops     1525ops/s   0.0mb/s      0.0ms/op     4182us/op-cpu [0ms - 2ms]
+appendfilerand1      91530ops     1525ops/s  11.9mb/s      0.2ms/op     4326us/op-cpu [0ms - 236ms]
+openfile1            91536ops     1525ops/s   0.0mb/s      0.1ms/op     4335us/op-cpu [0ms - 4ms]
+closefile1           91541ops     1526ops/s   0.0mb/s      0.0ms/op     4234us/op-cpu [0ms - 1ms]
+wrtfile1             91546ops     1526ops/s 189.8mb/s      0.2ms/op     4877us/op-cpu [0ms - 229ms]
+createfile1          91550ops     1526ops/s   0.0mb/s      0.3ms/op     4692us/op-cpu [0ms - 239ms]
+32097: 62.550: IO Summary: 1006784 ops, 16778.489 ops/s, (1525/3051 r/w), 401.5mb/s,    644us cpu/op,   0.5ms latency
+32097: 62.550: Shutting down processes
+Filebench Version 1.4.9.1
+32167: 0.000: Allocated 170MB of shared memory
+filebench> 32167: 0.001: File-server Version 3.0 personality successfully loaded
+32167: 0.001: Usage: set $dir=<dir>
+32167: 0.001:        set $meanfilesize=<size>     defaults to 131072
+32167: 0.001:        set $nfiles=<value>      defaults to 10000
+32167: 0.001:        set $nthreads=<value>    defaults to 50
+32167: 0.001:        set $meanappendsize=<value>  defaults to 16384
+32167: 0.001:        set $iosize=<size>  defaults to 1048576
+32167: 0.001:        set $meandirwidth=<size> defaults to 20
+32167: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 32167: 0.001: Creating/pre-allocating files and filesets
+32167: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+32167: 0.451: Removed any existing fileset bigfileset in 1 seconds
+32167: 0.452: making tree for filset /ssd/filebench/bigfileset
+32167: 0.477: Creating fileset bigfileset...
+32167: 1.666: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+32167: 1.666: waiting for fileset pre-allocation to finish
+32170: 1.666: Starting 1 filereader instances
+32171: 1.668: Starting 50 filereaderthread threads
+32167: 2.714: Running...
+32167: 62.719: Run took 60 seconds...
+32167: 62.723: Per-Operation Breakdown
+statfile1            86582ops     1443ops/s   0.0mb/s      0.0ms/op     4539us/op-cpu [0ms - 1ms]
+deletefile1          86589ops     1443ops/s   0.0mb/s      0.9ms/op     6513us/op-cpu [0ms - 588ms]
+closefile3           86598ops     1443ops/s   0.0mb/s      0.0ms/op     4482us/op-cpu [0ms - 1ms]
+readfile1            86602ops     1443ops/s 189.0mb/s      0.1ms/op     4676us/op-cpu [0ms - 345ms]
+openfile2            86605ops     1443ops/s   0.0mb/s      0.0ms/op     4593us/op-cpu [0ms - 13ms]
+closefile2           86605ops     1443ops/s   0.0mb/s      0.0ms/op     4455us/op-cpu [0ms - 1ms]
+appendfilerand1      86608ops     1443ops/s  11.3mb/s      0.1ms/op     4595us/op-cpu [0ms - 341ms]
+openfile1            86611ops     1443ops/s   0.0mb/s      0.1ms/op     4606us/op-cpu [0ms - 13ms]
+closefile1           86615ops     1443ops/s   0.0mb/s      0.0ms/op     4513us/op-cpu [0ms - 4ms]
+wrtfile1             86623ops     1444ops/s 179.0mb/s      0.2ms/op     5197us/op-cpu [0ms - 147ms]
+createfile1          86628ops     1444ops/s   0.0mb/s      0.3ms/op     4994us/op-cpu [0ms - 346ms]
+32167: 62.723: IO Summary: 952666 ops, 15876.762 ops/s, (1443/2887 r/w), 379.3mb/s,    689us cpu/op,   0.6ms latency
+32167: 62.723: Shutting down processes
+Filebench Version 1.4.9.1
+32243: 0.000: Allocated 170MB of shared memory
+filebench> 32243: 0.001: File-server Version 3.0 personality successfully loaded
+32243: 0.001: Usage: set $dir=<dir>
+32243: 0.001:        set $meanfilesize=<size>     defaults to 131072
+32243: 0.001:        set $nfiles=<value>      defaults to 10000
+32243: 0.001:        set $nthreads=<value>    defaults to 50
+32243: 0.001:        set $meanappendsize=<value>  defaults to 16384
+32243: 0.001:        set $iosize=<size>  defaults to 1048576
+32243: 0.001:        set $meandirwidth=<size> defaults to 20
+32243: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 32243: 0.001: Creating/pre-allocating files and filesets
+32243: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+32243: 0.446: Removed any existing fileset bigfileset in 1 seconds
+32243: 0.446: making tree for filset /ssd/filebench/bigfileset
+32243: 0.471: Creating fileset bigfileset...
+32243: 1.473: Preallocated 7979 of 10000 of fileset bigfileset in 2 seconds
+32243: 1.473: waiting for fileset pre-allocation to finish
+32246: 1.473: Starting 1 filereader instances
+32247: 1.474: Starting 50 filereaderthread threads
+32243: 2.542: Running...
+32243: 62.548: Run took 60 seconds...
+32243: 62.553: Per-Operation Breakdown
+statfile1            86549ops     1442ops/s   0.0mb/s      0.0ms/op     4586us/op-cpu [0ms - 0ms]
+deletefile1          86555ops     1442ops/s   0.0mb/s      0.8ms/op     6650us/op-cpu [0ms - 298ms]
+closefile3           86561ops     1443ops/s   0.0mb/s      0.0ms/op     4475us/op-cpu [0ms - 1ms]
+readfile1            86563ops     1443ops/s 188.7mb/s      0.1ms/op     4705us/op-cpu [0ms - 291ms]
+openfile2            86564ops     1443ops/s   0.0mb/s      0.0ms/op     4580us/op-cpu [0ms - 7ms]
+closefile2           86568ops     1443ops/s   0.0mb/s      0.0ms/op     4474us/op-cpu [0ms - 0ms]
+appendfilerand1      86572ops     1443ops/s  11.2mb/s      0.2ms/op     4609us/op-cpu [0ms - 269ms]
+openfile1            86576ops     1443ops/s   0.0mb/s      0.1ms/op     4623us/op-cpu [0ms - 5ms]
+closefile1           86583ops     1443ops/s   0.0mb/s      0.0ms/op     4551us/op-cpu [0ms - 1ms]
+wrtfile1             86588ops     1443ops/s 178.9mb/s      0.2ms/op     5163us/op-cpu [0ms - 280ms]
+createfile1          86594ops     1443ops/s   0.0mb/s      0.2ms/op     4985us/op-cpu [0ms - 270ms]
+32243: 62.553: IO Summary: 952273 ops, 15869.968 ops/s, (1443/2886 r/w), 378.8mb/s,    689us cpu/op,   0.6ms latency
+32243: 62.553: Shutting down processes
+Filebench Version 1.4.9.1
+32310: 0.000: Allocated 170MB of shared memory
+filebench> 32310: 0.001: File-server Version 3.0 personality successfully loaded
+32310: 0.001: Usage: set $dir=<dir>
+32310: 0.001:        set $meanfilesize=<size>     defaults to 131072
+32310: 0.001:        set $nfiles=<value>      defaults to 10000
+32310: 0.001:        set $nthreads=<value>    defaults to 50
+32310: 0.001:        set $meanappendsize=<value>  defaults to 16384
+32310: 0.001:        set $iosize=<size>  defaults to 1048576
+32310: 0.001:        set $meandirwidth=<size> defaults to 20
+32310: 0.001:        run runtime (e.g. run 60)
+filebench> filebench> 32310: 0.001: Creating/pre-allocating files and filesets
+32310: 0.015: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 1240.757MB
+32310: 0.449: Removed any existing fileset bigfileset in 1 seconds
+32310: 0.449: making tree for filset /ssd/filebench/bigfileset
+32310: 0.468: Creating fileset bigfileset...
+32310: 1.463: Preallocated 7979 of 10000 of fileset bigfileset in 1 seconds
+32310: 1.463: waiting for fileset pre-allocation to finish
+32313: 1.463: Starting 1 filereader instances
+32314: 1.465: Starting 50 filereaderthread threads
+32310: 2.541: Running...
+32310: 62.546: Run took 60 seconds...
+32310: 62.550: Per-Operation Breakdown
+statfile1            87766ops     1463ops/s   0.0mb/s      0.0ms/op     4500us/op-cpu [0ms - 11ms]
+deletefile1          87766ops     1463ops/s   0.0mb/s      0.7ms/op     5981us/op-cpu [0ms - 357ms]
+closefile3           87772ops     1463ops/s   0.0mb/s      0.0ms/op     4387us/op-cpu [0ms - 2ms]
+readfile1            87776ops     1463ops/s 191.9mb/s      0.1ms/op     4646us/op-cpu [0ms - 248ms]
+openfile2            87779ops     1463ops/s   0.0mb/s      0.1ms/op     4546us/op-cpu [0ms - 45ms]
+closefile2           87786ops     1463ops/s   0.0mb/s      0.0ms/op     4399us/op-cpu [0ms - 1ms]
+appendfilerand1      87790ops     1463ops/s  11.4mb/s      0.1ms/op     4562us/op-cpu [0ms - 247ms]
+openfile1            87792ops     1463ops/s   0.0mb/s      0.1ms/op     4559us/op-cpu [0ms - 17ms]
+closefile1           87799ops     1463ops/s   0.0mb/s      0.0ms/op     4451us/op-cpu [0ms - 1ms]
+wrtfile1             87801ops     1463ops/s 181.2mb/s      0.2ms/op     5129us/op-cpu [0ms - 245ms]
+createfile1          87812ops     1463ops/s   0.0mb/s      0.2ms/op     4944us/op-cpu [0ms - 245ms]
+32310: 62.550: IO Summary: 965639 ops, 16092.891 ops/s, (1463/2926 r/w), 384.5mb/s,    678us cpu/op,   0.5ms latency
+32310: 62.551: Shutting down processes
